@@ -1,6 +1,9 @@
 <template>
   <section class="views">
     <p>This is interesting: {{ text }}</p>
+    <img
+      :src="images[2]['2']"
+      alt="dates are fun">
     <div class="form">
       <label for="month">Month:</label>
       <input
@@ -23,7 +26,8 @@ export default {
     return {
       text: '',
       month: 5,
-      day: 13
+      day: 13,
+      images: []
     };
   },
   mounted: function () {
@@ -37,6 +41,16 @@ export default {
         .then(Response => {
           this.text = Response.text;
           this.number = Response.number;
+        });
+      this.getImage();
+    },
+    getImage () {
+      const apiUrl = './numberimages.json';
+      fetch(apiUrl)
+        .then(Response => Response.json())
+        .then(Response => {
+          this.images = [];
+          Response.imageUrls.forEach(index => this.images.push(index));
         });
     }
   } 
