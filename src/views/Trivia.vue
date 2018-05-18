@@ -44,7 +44,7 @@ export default {
         });
     },
     getImage () {
-      const apiUrl = './numberimages.json';
+      const apiUrl = './numberImages.json';
       fetch(apiUrl)
         .then(Response => Response.json())
         .then(Response => {
