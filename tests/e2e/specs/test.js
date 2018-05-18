@@ -3,7 +3,7 @@
 describe('Random Number Trivia App', () => {
   it('Visits the app root url', () => {
     cy.visit('http://number-trivia.herokuapp.com');
-    cy.contains('h1', 'All In A Number');
+    cy.contains('h1', 'Number Trivia!');
   });
   it('clicks on the trivia link', () => {
     cy.get('[href="#/trivia"]')
