@@ -9,19 +9,23 @@
       <a
         class="ref-link"
         href="http://numbersapi.com"
-        target="_blank">Numbers API</a>. By using the navigation above, you can make a request for three different types of number trivia:
+        target="_blank">Numbers API
+      </a>
+      . By using the navigation above, you can make a request for three different types of number trivia:
       <ul>
         <li>Trivia based off of a specified number</li>
         <li>Trivia based on a mathematical fact about a specified number</li>
         <li>Trivia based on a specified month and date</li>
       </ul>
-      Go learn something! [th]
+      You can use this app to wow your friends and family with the useful knowledge, or be "that" person. Now, go learn something! [th]
     </h4>
   </section>
 </template>
 
 <style>
-
+ul {
+  list-style: square;
+}
 img {
   width: 60%;
   border: 1px whitesmoke solid;
