@@ -1,7 +1,7 @@
 <template>
   <section class="views">
     
-    <h1>All In A Number</h1>
+    <h1>Number Trivia!</h1>
     <img src="https://picsum.photos/800/200?image=175">
    
     <h4>What can you learn from a number? Well, a lot.</h4>
@@ -9,9 +9,8 @@
       <a
         class="ref-link"
         href="http://numbersapi.com"
-        target="_blank">Numbers API
-      </a>
-      . By using the navigation above, you can make a request for three different types of number trivia:
+        target="_blank">
+      Numbers API</a>. By using the navigation above, you can make a request for three different types of number trivia:
       <ul>
         <li>Trivia based off of a specified number</li>
         <li>Trivia based on a mathematical fact about a specified number</li>
@@ -34,6 +33,10 @@ img {
 
 .ref-link {
   color: #2c3e50;
+}
+
+.ref-link:hover {
+  font-style: italic;
 }
 
 .brochure {

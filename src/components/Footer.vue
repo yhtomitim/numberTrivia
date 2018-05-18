@@ -6,6 +6,7 @@
 
 <style>
 .license {
+  font-weight: 600;
   position: fixed;
   bottom: 8px;
   left: 16px;
